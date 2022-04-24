@@ -4,7 +4,7 @@
 
 // type First<T extends any[]> = T[0] extends T[number] ? T[0] : never;
 
-type First<T extends any[]> = T extends [infer First, ...infer rest] ? First : never;
+type First<T extends any[]> = T extends [infer First, ...infer Rest] ? First : never;
 // 看看能不能解构出First 能解构出就取First 不能解构出就 never类型
 
 
